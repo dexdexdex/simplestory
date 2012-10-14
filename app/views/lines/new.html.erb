@@ -1,0 +1,13 @@
+Enter the next line in the story!
+<hr>
+
+<%= form_for @line do |f| -%>
+	<%= f.text_field :textField %><br />
+	Your Username (optional): <%= f.text_field :userName %><br />
+	<%= f.submit %>
+<% end -%>
+
+<hr>
+Display the last line
+
+<%= @lastLine.textField%>
